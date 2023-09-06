@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recommandation System Information</title>
+        <style>
+            /* Style your pagination buttons and container here */
+            .pagination {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .pagination button {
+                background-color: #99A3A4;
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: 10px 15px;
+                margin: 5px;
+            }
+
+            .pagination button:hover {
+                background-color: #5D6D7E;
+            }
+
+            .video-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 20px 20px;
+                margin: 20px;
+            }
+            .container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              position: relative;
+              font-family: Arial;
+              margin: 20px;
+              padding: 20px 20px;
+
+            }
+
+            .text-block {
+              background-color: #ABB2B9;
+              color: white;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 30px;
+              padding-right: 30px;
+              margin: 20px;
+            }
+              
+            .video-embed {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+        </style>
+    </head>
+<body>
+    <div class="text-block">
+    <h4><b><p><font size="+2">"이 페이지의 AI 학습추천 시스템은 이렇게 만들어졌습니다"</font></p></b></h4></div>
+    
+    <div class="container">
+    <p><font style="color:#797D7F;" size="+1">동영상(유튜브), 만화, 포스터, 글 등 다양한 교육 컨텐츠의 주요 키워드를 추출하고, AI에게는 콘텐츠의 각 동영상과 만화, 포스터 등이 어떤 내용인지를 학습하게 하여 교육 컨텐츠별 관심 키워드에 따른 콘텐츠를 추천할 수 있도록 고안하였습니다. 향후, 추천결과에 따른 사용자의 만족도를 반영하여 사용자 맞춤형 AI학습추천 시스템을 개발하고자 합니다.</font></p><br>
+<img src="img/AI_recommend_system.jpg" style="width:100%">
+
+        </div>
+
+    <script>
+        function showPage(page) {
+            // Hide all video containers
+            document.querySelectorAll('.video-container').forEach(function(container) {
+                container.style.display = 'none';
+            });
+
+            // Show the selected page
+            document.getElementById('page' + page).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+
