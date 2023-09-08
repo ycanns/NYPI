@@ -4,7 +4,7 @@
 <!-- KRIHS Magazine Information -->
 <br />
 <div align="center">
-
+  <img src="docs/img/main_page.jpg" alt="main_page" width="749" height="472">
   <h3 align="center">AI 학습 추천 시스템</h3>
 
   <p align="center">
