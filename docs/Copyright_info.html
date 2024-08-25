@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recommandation System Information</title>
+        <style>
+            /* Style your pagination buttons and container here */
+            .pagination {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .pagination button {
+                background-color: #99A3A4;
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: 10px 15px;
+                margin: 5px;
+            }
+
+            .pagination button:hover {
+                background-color: #5D6D7E;
+            }
+
+            .video-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 20px 20px;
+                margin: 20px;
+            }
+            .container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              position: relative;
+              font-family: Arial;
+              margin: 10px;
+              padding: 20px 20px;
+
+            }
+
+            .text-block {
+              background-color: #ABB2B9;
+              color: white;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 30px;
+              padding-right: 30px;
+              margin: 20px;
+            }
+              
+            .video-embed {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+        </style>
+    </head>
+<body>
+    <div class="text-block">
+    <h4><b><p><font size="+2">저작권표시</font></p></b></h4></div>
+    
+    <div class="container">
+    <font><p class="sansserif" style="text-align:left;">- 본 콘텐츠의 자료출처는 2015년-2022년 교육부에서 개발한 인성교육 프로그램 콘텐츠 186개와 2023년에 개발한 존중과배려, 디지털 윤리 콘텐츠 32개를 포함하여 총218개 입니다. <br><br>
+        - 청소년 도박문제 예방 콘텐츠는 한국도박문제예방치유원에서 개발한 컨텐츠를 활용하였습니다.<br><br>
+    - 모든 자료는 디지털 콘텐츠로 영역 분류 및 디자인하여 전시하고, 상호작용 콘텐츠로 새롭게 개발하여 제공하였습니다. 이곳의 모든 자료는 교육용으로 자유롭게 사용 가능합니다.<br><br>
+    - 아이콘 출처: https://uxwing.com</p>
+      </font>
+        </div>
+
+    <script>
+        function showPage(page) {
+            // Hide all video containers
+            document.querySelectorAll('.video-container').forEach(function(container) {
+                container.style.display = 'none';
+            });
+
+            // Show the selected page
+            document.getElementById('page' + page).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+
